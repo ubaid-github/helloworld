@@ -62,7 +62,8 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure Web App Deploy: urjavaapp'
             inputs:
-              azureSubscription: $(azureSubscription)
-              appType: webAppLinux
-              appName: $(webAppName)
+              azureSubscription: 'Azure subscription 1 (b0f53ad6-7dd8-4b1d-ba55-234f90a2a54c)'
+              appType: 'webAppLinux'
+              appName: 'urjavaapp'
               package: '$(Pipeline.Workspace)/drop/**/target/*.?(war|jar)'
+              runtimeStack: 'JAVA|11-java11'
