@@ -67,4 +67,3 @@ stages:
               appName: 'java-webapp-ur'
               package: '$(Pipeline.Workspace)/drop/**/target/*.?(war|jar)'
               runtimeStack: 'JAVA|11-java11'
-              startUpCommand: 'java -cp target/helloworld-1.0.jar com.coveros.demo.helloworld.HelloWorld'
